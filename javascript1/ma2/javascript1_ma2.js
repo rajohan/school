@@ -37,10 +37,10 @@ let paragraph = "Strawberries are a popular part of spring and summer diets thro
     "There are countless recipes for the luscious red berry, but many people prefer to eat them fresh and unaccompanied. ";
 
 function myReplacer(content, pattern, replaceWith) {
-    const isUpperCaseFirst = (str) => str.charAt(0) === str.charAt(0).toUpperCase();
+    const isCapitalized = (str) => str.charAt(0) === str.charAt(0).toUpperCase();
 
     return content.replace(new RegExp(pattern, "gi"), match => {
-        return isUpperCaseFirst(match)
+        return isCapitalized(match)
             ? replaceWith.charAt(0).toUpperCase() + replaceWith.substr(1)
             : replaceWith;
     });
