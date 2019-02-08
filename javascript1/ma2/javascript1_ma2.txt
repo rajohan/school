@@ -1,10 +1,6 @@
 //MODULE ASSIGNMENT 2 - LEVEL 2
 
-
-
 1. What is a function literal?
-
-
 
 A function literal is a function expression. A value of a function. It has four parts.
 1. The reserved word function
@@ -25,53 +21,30 @@ function notFunctionLiteral() {
 }
 
 
-
-
-
 2. What is the constructor?
-
-
 
 A constructor is a method used to create and initialize an instance of an object created from a class (the new keyword on an object in JavaScript before ES6).
 
 
-
 3. What does the return statement do?
 
-
-
 The return statement stops the execution of a function and returns to its caller.
- 
 A value can be returned to the caller from the return statement
 
 
-
-
-
 4. What will be written to the console from this function:
-		
-
-function myFunction(){
-			  
-    return console.log('inside my function');
-			  
-    console.log('My name is Andy');
-		
-}
-		
+	
+function myFunction(){		  
+    return console.log('inside my function');	  
+    console.log('My name is Andy');	
+}		
 myFunction();
-
-
 
 "inside my function" will be written to the console. 
 The last console log will never be reached because of the return statement on the line above it.
 
 
-
-
 5. Briefly describe scope in JavaScript.
-
-
 
 Scope is what's deciding where a variable/function/objects etc is available. 
 JavaScript used to have only global and local scope but, after the introduction of the "let" and "const" keywords it also got block scope.
