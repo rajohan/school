@@ -7,7 +7,7 @@ function MyFunc() {
 
 MyFunc.prototype.greet = function () {
     console.log(this.message);
-}
+};
 
 const myFunc = new MyFunc();
 
