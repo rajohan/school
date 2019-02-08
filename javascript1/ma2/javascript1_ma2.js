@@ -28,7 +28,8 @@ console.log("Sliced array:", slicedArray);
 myArray.splice(9, 1);
 console.log("Last number deleted:", myArray);
 
-//4. Given the following paragraph, create a JavaScript function that changes all mentions of strawberry to banana and strawberries to bananas: 
+//4. Given the following paragraph, create a JavaScript function that changes all 
+//   mentions of strawberry to banana and strawberries to bananas: 
 let paragraph = "Strawberries are a popular part of spring and summer diets throughout America. " +
     "Mouths water from coast to coast each spring, when small white blossoms start to appear on strawberry bushes. " +
     "They announce the impending arrival of the ruby red berries that so many people crave. " +
@@ -51,7 +52,9 @@ paragraph = myReplacer(paragraph, "strawberries", "bananas");
 
 console.log(paragraph);
 
-//5. Create an array and a button. The array should contain 4 football clubs names. When the button is clicked, remove all elements out of the array that we just created. There after add in 4 names of cars inside that array. Log it to the console.
+//5. Create an array and a button. The array should contain 4 football clubs names. 
+//   When the button is clicked, remove all elements out of the array that we just created. 
+//   There after add in 4 names of cars inside that array. Log it to the console.
 const clubs = ["Vålerenga", "Manchester United", "Real Madrid", "Borussia Dortmund"];
 
 document.getElementById("myButton").addEventListener("click", () => {
