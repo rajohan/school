@@ -3,13 +3,13 @@
 //1. Create a function that displays prototypal inheritance
 function MyFunc() {
     this.message = "Hello from prototype declared function";
-};
+}
 
 MyFunc.prototype.greet = function () {
     console.log(this.message);
 }
 
-const myFunc = new MyFunc;
+const myFunc = new MyFunc();
 
 myFunc.greet();
 
