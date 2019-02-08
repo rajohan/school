@@ -2,66 +2,66 @@
 
 1. What is a function literal?
 
-A function literal is a function expression. A value of a function. It has four parts.
-1. The reserved word function
-2. The function's name (optional)
-3. Parentheses wrapped around 0 or more parameters separated by commas.
-4. The function body, statements wrapped in curly braces.
+	A function literal is a function expression. A value of a function. It has four parts.
+	1. The reserved word function
+	2. The function's name (optional)
+	3. Parentheses wrapped around 0 or more parameters separated by commas.
+	4. The function body, statements wrapped in curly braces.
 
-const functionLiteral = function() {
-    // Is a function expression / function literal
-};
+	const functionLiteral = function() {
+	    // Is a function expression / function literal
+	};
 
-const functionLiteral2 = function myFunctionLiteral() {
-    // Is a function expression / function literal
-};
+	const functionLiteral2 = function myFunctionLiteral() {
+	    // Is a function expression / function literal
+	};
 
-function notFunctionLiteral() {
-   // Is not a function expression / function literal
-}
+	function notFunctionLiteral() {
+	   // Is not a function expression / function literal
+	}
 
 
 2. What is the constructor?
 
-A constructor is a method used to create and initialize an instance of an object created from a class (the new keyword on an object in JavaScript before ES6).
+	A constructor is a method used to create and initialize an instance of an object created from a class (the new keyword on an object in JavaScript before ES6).
 
 
 3. What does the return statement do?
 
-The return statement stops the execution of a function and returns to its caller.
-A value can be returned to the caller from the return statement
+	The return statement stops the execution of a function and returns to its caller.
+	A value can be returned to the caller from the return statement
 
 
 4. What will be written to the console from this function:
 	
-function myFunction(){		  
-    return console.log('inside my function');	  
-    console.log('My name is Andy');	
-}		
-myFunction();
+	function myFunction(){		  
+	    return console.log('inside my function');	  
+	    console.log('My name is Andy');	
+	}		
+	myFunction();
 
-"inside my function" will be written to the console. 
-The last console log will never be reached because of the return statement on the line above it.
+	"inside my function" will be written to the console. 
+	The last console log will never be reached because of the return statement on the line above it.
 
 
 5. Briefly describe scope in JavaScript.
 
-Scope is what's deciding where a variable/function/objects etc is available. 
-JavaScript used to have only global and local scope but, after the introduction of the "let" and "const" keywords it also got block scope.
+	Scope is what's deciding where a variable/function/objects etc is available. 
+	JavaScript used to have only global and local scope but, after the introduction of the "let" and "const" keywords it also got block scope.
 
-- Global: available everywhere
-- Block: only available in the current block and its child functions/blocks. Only when using "let/const". 
-  if "var" is used inside a block (that is not a function) it will be available globaly.
-- Local: only available in the function and its child functions/blocks.
+	- Global: available everywhere
+	- Block: only available in the current block and its child functions/blocks. Only when using "let/const". 
+	  if "var" is used inside a block (that is not a function) it will be available globaly.
+	- Local: only available in the function and its child functions/blocks.
 
-const global = "I'm globaly scoped";
+	const global = "I'm globaly scoped";
 
-{
-    let blockLet = "I'm block scoped"
-    var blockVar = "I'm globaly scoped"
-}
+	{
+	    let blockLet = "I'm block scoped"
+	    var blockVar = "I'm globaly scoped"
+	}
 
-function localScope() {
-    let localLet = "I'm locally scoped"
-    var localVar = "I'm locally scoped"
-}
+	function localScope() {
+	    let localLet = "I'm locally scoped"
+	    var localVar = "I'm locally scoped"
+	}
