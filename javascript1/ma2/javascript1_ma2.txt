@@ -23,8 +23,8 @@
 
 2. What is the constructor?
 
-	A constructor is a method used to create and initialize an instance of an object created from a class 
-	(the new keyword on an object in JavaScript before ES6).
+	A constructor is a method used to create and initialize an instance of an object 
+	created from a class (the new keyword on an object in JavaScript before ES6).
 
 
 3. What does the return statement do?
