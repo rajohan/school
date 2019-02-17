@@ -1,0 +1,83 @@
+JavaScript MA03
+----------------
+Level 2
+
+1. In your own words, describe what JavaScript Code Style is.
+
+JavaScript code style is how you write the code. JavaScript is very flexible and allows everyone to find their own coding style.
+But, it is very important to write code that can be easily understood by other people that may need to edit or work with the code.
+
+You should therefore think about how you write the code and focus on using good practices
+like use of white space, comments, short line lengths, brackets on function, semicolons where appropriate,
+indenting code and good and meaningful variable/function naming etc.
+
+
+2. What is a Regular Expression?
+
+A regular expression is a special text string used to search for a pattern.
+It can be hard to understand at first but, is very powerful.
+It can slow down a application a bit so it should not be used unnecessary
+
+It is very useful when validating user input to ensure that its in the correct format.
+Like to ensure that a email address is in the correct format email@domain.com
+
+It can also be used to replace some text string with another. Or to search for exact things in some data.
+
+3. What does the .random() method do?
+
+The random method creates a floating-point number in the range of 0–1.
+This can then be scaled to the desired number size.
+
+This method is not cryptographically secure and should not be used on anything related to security like passwords etc.
+
+
+4. What does the .sort() method do?
+
+The sort method sorts the elements of an array.
+This method sorts by converting the elements to strings and compare their value.
+A before B etc.
+
+This will not work as you might think on numbers. Because it looks at the first character (number) first
+and compare it to the other numbers first character and only looks at the second character of the
+number if the first characters are equal.
+If you have the array [2, 1, 6, 10, 13, 23];
+It would be [1, 10, 13, 2, 23, 6]; after sort is applied.
+
+This method mutates the array and do not create a new one.
+
+
+5. What does the .reverse() method do?
+
+The reverse method reverses an array.
+The first element will be the last and the last element will be the first etc. Those in the middle will also be switched.
+This method mutates the array and do not create a new one.
+
+
+6. List two examples of bad JavaScript code.
+
+Not using the var, let or const statement to define variables.
+Using non-strict comparison operators instead of strict comparison operators (== vs ===).
+
+
+7. What data types can a JSON object contain?
+
+A JSON object can contain the data types: string, number, object, array and boolean.
+It can also contain a empty value (null).
+
+
+8. What is minifying JavaScript Code?
+
+Minifying code is something that is done before running the code in production.
+This process will make the code as small as possible, removing any unnecessary whitespace etc.
+
+Dependant on the settings of the minifyer comments may be removed and functions/variables might get shorter names.
+Some minifyers also add polyfill (support for functions not supported by different browsers and other browser fixes)
+to help with cross browser compatibility.
+
+The minified code is not meant to be read and understood by humans
+and is only meant for making downloads smaller and the page as fast as possible.
+
+
+9. What is a global variable?
+
+A global variable is a variable that is accessible everywhere in the application.
