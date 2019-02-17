@@ -70,7 +70,7 @@ It can also contain a empty value (null).
 Minifying code is something that is done before running the code in production.
 This process will make the code as small as possible, removing any unnecessary whitespace etc.
 
-Dependant on the settings of the minifyer comments may be removed and functions/variables might get shorter names.
+Depending on the settings of the minifyer comments may be removed and functions/variables might get shorter names.
 Some minifyers also add polyfill (support for functions not supported by different browsers and other browser fixes)
 to help with cross browser compatibility.
 
