@@ -15,7 +15,7 @@ indenting code and good and meaningful variable/function naming etc.
 2. What is a Regular Expression?
 
 A regular expression is a special text string used to search for a pattern.
-It can be hard to understand at first but, is very powerful.
+It can be hard to understand at first but, it is very powerful.
 It can slow down a application a bit so it should not be used unnecessary
 
 It is very useful when validating user input to ensure that its in the correct format.
