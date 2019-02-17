@@ -10,19 +10,19 @@
         const emailRegex = new RegExp(/^[A-Za-z0-9][a-zA-Z0-9._-]{2,}@[a-zA-Z0-9-]{2,}\.[a-zA-Z0-9.-]{2,}$/);
         const errors = [];
 
-        if(firstName && firstName.value.length <= 1) {
+        if(firstName.value.length <= 1) {
             errors.push("First name must be at least 2 characters");
         }
 
-        if(lastName && lastName.value.length <= 1) {
+        if(lastName.value.length <= 1) {
             errors.push("Last name must be at least 2 characters");
         }
 
-        if(telephoneNumber && !phoneRegex.test(telephoneNumber.value)) {
+        if(!phoneRegex.test(telephoneNumber.value)) {
             errors.push("Invalid phone number.")
         }
 
-        if(email && !emailRegex.test(email.value)) {
+        if(!emailRegex.test(email.value)) {
             errors.push("Invalid email address.");
         }
 
