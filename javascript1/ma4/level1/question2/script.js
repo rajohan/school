@@ -32,7 +32,7 @@
         number.innerText = "#" + (i + 1);
         completed.innerText = todo.completed ? "Completed" : "Uncompleted";
         toggleCompleteButton.innerText = todo.completed ? "Mark Uncomplete" : "Mark Complete";
-        deleteButton.innerText = "Delete"
+        deleteButton.innerText = "Delete";
 
         // Set event handlers
         deleteButton.addEventListener("click", () => console.log("Delete todo with id:", todo.id));
