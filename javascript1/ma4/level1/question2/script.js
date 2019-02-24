@@ -56,5 +56,3 @@
         .then(data => handleTodos(data))
         .catch(err => console.log("An error occured when fetching the todos.", err));
 })();
-
-
