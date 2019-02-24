@@ -43,6 +43,7 @@ The promise have 3 states
 2. rejected - promise settled and failed.
 3. fulfilled - promise settled and was successful.
 
+
 What is an API?
 
 API is short for Application Programming Interface.
