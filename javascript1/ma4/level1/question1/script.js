@@ -3,4 +3,3 @@
     const alertButton = document.getElementById("alertButton");
     alertButton.addEventListener("click", () => alert("Button was clicked."));
 })();
-
