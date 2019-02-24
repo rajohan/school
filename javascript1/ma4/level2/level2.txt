@@ -1,0 +1,67 @@
+What is the DOM?
+
+DOM is short for Document Object Model. The HTML we write is parsed and turned into the DOM.
+The DOM represent a HTML or XML document as nodes and objects.
+The DOM is the API that lets JavaScript and other programming languages access the document and
+change the structure, style and content.
+
+
+List three methods to manipulate the DOM.
+
+1. createElement() - Creates a new HTML element using the tag provided as the methods first parameter.
+2. appendChild() - Appends a new HTML element as the last child in the parent HTML element that calls this method. Can also be used to move a existing HTML element in the DOM.
+3. setAttribute() - Updates the old attribute of a HTML element if it exists. If the attribute dont exist it adds a new attribute to the HTML element.
+
+
+What is an asynchronous call?
+
+JavaScript is single threaded and all code is executed from top to bottom.
+This works fine if the code just handles things that executes and completes almost immediately like manipulating the DOM, loop through an object and output the values etc.
+But, if we handle things like fetching data from a database that takes a bit of time synchronously we would create whats called blocking code.
+This is where the script execution has to stop and wait for the data from the database to be fetched.
+
+We want the script to continue while the data is fetched and we can do that with a asynchronous call.
+This is done by providing the script with a callback function and tell it to start fetching the data and
+then instead of waiting for the data to be fetched it should execute the rest of the script.
+When the data fetching is done the callback is called and the data can be handled appropriately within the callback function.
+
+
+Briefly explain what the sources tab in Chromes Developers Tools does.
+
+In the sources tab you can see all the files and code within them. This is useful when debugging as the developer tools
+lets you set breakpoints, watch and manipulate variable values and run through code line by line etc.
+
+
+What is a JavaScript promise?
+
+A JavaScript promise is a way to say I know a result is coming but, not when and what.
+A promise can be associated with handlers to deal with the result.
+This lets us run asynchronous code and return a promise to supply the value at some point in the future.
+
+The promise have 3 states
+1. pending - initial state, result not ready
+2. rejected - promise settled and failed.
+3. fulfilled - promise settled and was successful.
+
+What is an API?
+
+API is short for Application Programming Interface.
+An API is code that make applications and software able to communicate with each other.
+Like JavaScript manipulating the DOM using the DOM API or fetching data from a database with the fetch API.
+
+
+What is a JavaScript Event?
+
+JavaScript Events lets us listen for some specific actions from the user or the browser to give a response based on the event.
+Like a button click, page load, pressing a key or focusing a element etc.
+
+
+What is event bubbling?
+
+When a event is triggered it first looks for listeners with the addEventListener() "capture" parameter set to true (3 parameter).
+This phase goes from the window object to the event targets parent.
+In the next phase all listeners registered on the event target is called regardless of the capture flag.
+Last is the phase called event bubbling where the event bubble back up from the event targets parent
+to the window object calling the non-capturers (listeners with the capture parameter set to false).
+
+Event bubbling can be stopped at a handler with event.stopPropagation().

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 60px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid #efefef;
+    background-color: #f9f9f9;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardNumber {
+    font-weight: 700;
+    margin: 10px;
+}
+
+.complete,
+.uncomplete {
+    margin: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.complete {
+    color: #31bd22;
+}
+
+.uncomplete {
+    color: #c09300;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.toggleCompleteButton,
+.deleteButton {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.toggleCompleteButton {
+    background-color: #226185;
+}
+
+.toggleCompleteButton:hover {
+    background-color: #2590be;
+}
+
+.deleteButton {
+    background-color: #d25f5e;
+}
+
+.deleteButton:hover {
+    background-color: #ff6362;
+}
+
+.card p {
+    font-size: 15px;
+    padding: 10px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0;
+}
