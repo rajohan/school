@@ -1,14 +1,6 @@
 (() => {
     const cardsContainer = document.getElementById("cards");
-
-    // Loop through the array of game cards
-    const handleCards = cards => {
-        cards.length === 0 ? renderMessage("Sorry no cards found") : cardsContainer.innerText = "";
-
-        for (let i = 0; i < cards.length; i++) {
-            renderCard(cards[i]);
-        }
-    };
+    let loading = false;
 
     // Render a message to the cardsContainer
     const renderMessage = (message) => {
@@ -47,6 +39,17 @@
         cardsContainer.appendChild(colSm4);
     };
 
+    // Loop through the array of game cards
+    const handleCards = cards => {
+        cards.length === 0 ? renderMessage("Sorry no cards found") : cardsContainer.innerText = "";
+
+        for (let i = 0; i < cards.length; i++) {
+            renderCard(cards[i]);
+        }
+
+        loading = false;
+    };
+
     // Handle the search
     const handleSearch = query => {
         getCards("https://api.magicthegathering.io/v1/cards?name=" + query);
@@ -66,12 +69,15 @@
 
     // Get all the cards
     const getCards = (url = "https://api.magicthegathering.io/v1/cards") => {
-        renderMessage("Loading...");
+        if(!loading) {
+            loading = true;
+            renderMessage("Loading...");
 
-        fetch(url)
-            .then(result => result.json())
-            .then(({cards}) => handleCards(cards))
-            .catch(error => console.log("An error occurred while trying to get the game cards from the API", error));
+            fetch(url)
+                .then(result => result.json())
+                .then(({cards}) => handleCards(cards))
+                .catch(error => console.log("An error occurred while trying to get the game cards from the API", error));
+        }
     };
 
     getCards();

@@ -1,4 +1,21 @@
 (() => {
+    // Render a message to the cardContainer
+    const renderMessage = (message) => {
+        const cardContainer = document.getElementById("cardContainer");
+        let colSm12;
+
+        if(!document.getElementById("statusMessage")) {
+            colSm12 = document.createElement("div");
+            colSm12.id = "statusMessage";
+            colSm12.className = "mt-30-center";
+            cardContainer.appendChild(colSm12);
+        } else {
+            colSm12 = document.getElementById("statusMessage");
+        }
+
+        colSm12.innerText = message;
+    };
+
     // Render game card
     const renderCard = ({imageUrl, name, text, rarity, colors}) => {
         const detailsContainer = document.getElementById("cardDetails");
@@ -20,23 +37,6 @@
         // Add elements to parent container
         imageContainer.appendChild(image);
         detailsContainer.appendChilds(header, aboutDiv, rarityDiv, colorDiv);
-    };
-
-    // Render a message to the cardContainer
-    const renderMessage = (message) => {
-        const cardContainer = document.getElementById("cardContainer");
-        let colSm12;
-
-        if(!document.getElementById("statusMessage")) {
-            colSm12 = document.createElement("div");
-            colSm12.id = "statusMessage";
-            colSm12.className = "mt-30-center";
-            cardContainer.appendChild(colSm12);
-        } else {
-            colSm12 = document.getElementById("statusMessage");
-        }
-
-        colSm12.innerText = message;
     };
 
     // Get the card
